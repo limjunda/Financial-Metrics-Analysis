@@ -17,17 +17,23 @@ cat "\Users\Lim Jun Da\.ssh\id_ed25519.pub"
 # Rename your local machine reference from master to main
 # Use git log to check if you are using master or main
 git log
+
 git branch -m master main
 
 # Setup your remote, origin is just a nickname for your local terminal reference
 git remote add origin git@github.com:limjunda/Financial-Metrics-Analysis.git
+
 git remote -v
+
 git remote remove origin
 
 # Example python file name is test.py
 # This will create a new branch and push the files to the Github new branch
 # Create a new branch locally
 git checkout -b Nameofbranch
+
 git add test.py
+
 git commit -m "This is to add test.py"
+
 git push --set-upstream origin Terminal
